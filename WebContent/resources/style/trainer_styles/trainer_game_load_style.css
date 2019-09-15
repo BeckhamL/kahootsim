@@ -1,0 +1,38 @@
+body {
+  margin: 0;  
+  font-family: 'Rubik';
+  background: #F5F5F5;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#main_text {
+	color: white;
+	font-size:60px;
+	margin-top: 10px;
+}
+
+#row_container {
+	position: absolute;
+	top: 25%;
+}
+
+#row_value {
+	padding: 10px;
+	color: white;
+	font-size: 30px;
+}
+
+.container-fluid .row #row_value:hover {
+	text-decoration: line-through;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#lobby_button {
+    width: 360px;
+    height: 100px;
+    position: relative;
+    top: 550px;
+    font-size: 55px;
+}

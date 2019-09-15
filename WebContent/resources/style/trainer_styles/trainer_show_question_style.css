@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Rubik';
+  background: #d8d8d8;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#align_buttons {
+    position: absolute;
+    top: 20%;
+    float: right;
+    right: 3%;
+}
+
+.header {
+	text-align: center;
+    background: white;
+    color: black;
+    font-size: 30px;
+	padding: 10px;
+}
+
+.timerAndCounter {
+   background: #7cc992;
+   border-radius: 50%;
+   border: none;
+   font-size: 65px;
+   width: 100px;
+   height: 100px;
+   color: white;
+}
+
+#image {
+   max-width: 600px;
+   height: 300px;
+   margin: 10px auto 20px;
+   display: block;
+   box-shadow: 10px 10px 5px #aaaaaa;
+   border: 1px solid #BFBFBF;
+}
+
+#timer_clock {
+	width: 95.4%;
+    display: inline-block;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0px auto;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+}
+
+#timer {
+	display: inline-block;
+    float: left;
+}
+
+#userCounter {
+	display: inline-block;
+    float: right;
+}
+
+.button_form {
+	padding: 15px 5px 5px 5px;
+    left: 50%;
+}
+
+#questions_div {
+    position: absolute;
+    font-size: 21px;
+    left: 15%;
+    width: 70%;
+    margin: 0;
+    color: black;
+    text-align: left;
+}
+
+.no-sub-container {
+    height: 150px;
+    margin: 10px auto 20px;
+    margin-top: 200px;
+    display: block;
+}
+
+.no-sub-txt {
+	font-size: 80px;
+}
+
+#question_top_space {
+	margin-top: 10px;
+	box-shadow: 6px 4px 5px #aaaaaa;
+}
+
+#question_header {
+	width: 100%;
+}
+
+input[type="submit"]:disabled {
+  opacity: none;
+}
+
+.question_footer {
+    position: fixed;
+    /* left: 0; */
+    /* bottom: 0; */
+    height: 340px;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+}
+
+.show-question-group {
+	max-height: 300px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    color: white;
+    position: absolute;
+    width: 94%;
+    top: 60%;
+    left: 3%;
+    padding: 0px 20px 0px 20px;
+    border-radius: 15px;
+    background: #F2F2FB;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}

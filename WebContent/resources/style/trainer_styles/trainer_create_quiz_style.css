@@ -1,0 +1,259 @@
+/********************************************
+************ Global settings ****************
+*********************************************/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Rubik';
+}
+
+/********************************************
+************ Floating label ****************
+*********************************************/
+.form-capsule .form-group {
+  /* Form group*/
+  position: relative;
+}
+
+/******* Label *******/
+.form-capsule .form-group label {
+  /* Input field floating label */
+  position: absolute;
+  font-size: 0.8em;
+  top: 0px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 5px 0 10px 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+  /* prevent flickering */
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+}
+
+.form-capsule .show-label label {
+  /* Active state for label when visible */
+  opacity: 1;
+}
+
+/******** Form control fields ********/
+.form-capsule .form-control {
+  /* Form control fields */
+  height: 50px;
+  padding: 15px 10px;
+  box-shadow: 0 0 0 2px transparent;
+  transition: all 0.2s ease-out;
+}
+
+.form-capsule .form-control:focus {
+  /* Focus state for form-control fields */
+  box-shadow: 0 0 0 2px #000066;
+  outline: transparent;
+  border-color: transparent;
+}
+
+.form-capsule .show-label .form-control {
+  /* Active state for form-control fields */
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+/********************************************
+************ Textarea ***********************
+*********************************************/
+.form-capsule .form-group-textarea label {
+  /* Textarea floating label */
+  background-color: white;
+  width: auto;
+  right: 0;
+  left: 0;
+  margin: 1px 18px 1px 1px;
+  border-radius: 3px 3px 0 0;
+  padding-top: 4px;
+}
+
+.form-capsule .form-group-textarea .form-control {
+  /* Textarea */
+  min-height: 100px;
+  height: auto;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+/********************************************
+************ Markdown ***********************
+*********************************************/
+.form-capsule .form-group-markdown label {
+  /* Markdown textarea floating label */
+  background-color: white;
+  width: auto;
+  right: 0;
+  left: 0;
+  margin: 1px 18px 1px 1px;
+  border-radius: 3px 3px 0 0;
+  padding-top: 4px;
+}
+
+.form-capsule .form-group-markdown .form-control {
+  /* Markdown textarea */
+  margin-top: 10px;
+  min-height: 200px;
+  height: auto;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.form-capsule .markdown-upload-button {
+  /* Markdown file upload buttong */
+  cursor: pointer;
+  color: blue;
+}
+
+.form-capsule .markdown-preview {
+  /* Markdown preview */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 230px;
+  width: 100%;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}
+
+/********************************************
+************ Select *************************
+*********************************************/
+.form-capsule .form-group-select label {
+  /* Select floating label */
+  opacity: 1;
+  z-index: 1;
+}
+
+.form-capsule .form-group-select .form-control {
+  /* Select */
+  padding-top: 25px;
+  padding-bottom: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-wrapper {
+  /* Select wrapper */
+  position: relative;
+  z-index: 0;
+}
+
+.select-wrapper:before {
+  /* Select arrow image background */
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  background-image: url(https://tlc-web.qcode.co.uk/Graphics/dropdown-arrow-down-dark.svg);
+}
+
+/********************************************
+************ Help block *********************
+*********************************************/
+.help-block-inline {
+  /* Inline help block */
+  position: absolute;
+  top: 0;
+  right: 25px;
+  line-height: 50px;
+  margin: 0;
+  font-size: 90%;
+  color: #CCC;
+}
+
+/********************************************
+************ Units help-block ***************
+*********************************************/
+.help-block-floating {
+  /* Inline help block for units */
+  color: #555;
+}
+
+.help-block-background {
+  right: 0;
+  background-color: #eee;
+  color: #555;
+  border-radius: 0 3px 3px 0;
+  height: 48px;
+  margin: 1px;
+  padding: 0 12px;
+}
+
+/********************************************
+************ Tooltip ************************
+*********************************************/
+.tooltip-icon {
+  /* Tooltip icon */
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+/********************************************
+************ Radio group ********************
+*********************************************/
+.radio-group {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio, .radio + .radio {
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+}
+
+.radio:last-child {
+  border-bottom: 0;
+}
+
+.radio-option {
+  display: none;
+}
+
+.radio-option:checked + .radio-option-label:before {
+  border-color: #000666;
+  border-width: 5px;
+}
+
+.radio-option-label {
+  display: table;
+}
+
+.radio-option-label:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  margin: 17px;
+  border-radius: 50%;
+  background-color: white;
+  transition: border-width 0.3s ease;
+}
+
+.radio-option-label-text {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px 10px 10px 0;
+  width: 100%;
+  margin: 0;
+}
+
+#form_container {
+	margin-top: 10px;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Configuration>
+	<Properties>
+		<Property name="logFolder">${web:rootDir}</Property>
+	</Properties>
+	
+	<Appenders>
+		<Console name="StdOut" target="SYSTEM_OUT">
+			<PatternLayout pattern="%logger - %msg%n" />
+		</Console>
+		<File name="FileAppender" filename="${logFolder}output.log">
+			<PatternLayout pattern="%logger - %msg%n" />
+		</File>
+		<File name="HibernateFile" filename="${logFolder}hibernate.log"></File>
+	</Appenders>
+
+	<Loggers>
+		<Root level="error">
+			<AppenderRef ref="StdOut" />
+		</Root>
+
+		<Logger name="com.fdmgroup.controller.UserController" level="error" additivity="true">
+			<AppenderRef ref="FileAppender" />
+		</Logger>
+		
+		<Logger name="MyLogger" level="debug">
+			<AppenderRef ref="StdOut" />
+			<AppenderRef ref="FileAppender" />
+		</Logger>
+	</Loggers>
+</Configuration>

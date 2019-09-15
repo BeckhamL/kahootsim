@@ -1,0 +1,57 @@
+.changing_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: bg-animation 17s infinite;
+}
+
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: orange;
+  }
+  30% {
+    background-color: green;
+  }
+  45% {
+    background-color: blue;
+  }
+  60% {
+    background-color: purple;
+  }
+  75% {
+    background-color: pink;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: orange;
+  }
+  30% {
+    background-color: green;
+  }
+  45% {
+    background-color: blue;
+  }
+  60% {
+    background-color: purple;
+  }
+  75% {
+    background-color: pink;
+  }
+  100% {
+    background-color: red;
+  }
+}

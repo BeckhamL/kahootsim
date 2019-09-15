@@ -1,0 +1,91 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#align_buttons {
+	position: absolute;
+    top: 20%;
+    float: left;
+    right: 3%;
+}
+
+#next_button {
+	z-index: 1;
+	float: right;
+    top: 20%;
+    position: absolute;
+    right: 3%;
+	font-family: 'Rubik', sans-serif;
+}
+
+.answer_button_div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+svg > a:first-child > path {
+  cursor: pointer;
+  fill: #ff4040;
+}
+
+svg > a:nth-child(2n) > path {
+  cursor: pointer;
+  fill: #ffff00;
+}
+
+svg > a:nth-child(3n) > path {
+  cursor: pointer;
+  fill: #36cb2f;
+}
+
+svg > a:last-child > path {
+  cursor: pointer;
+  fill: #007bff;
+}
+
+.textContainer {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  border: 3px solid black;
+  padding: 10px;
+}
+
+#blue_circle {
+	position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+#green_square {
+	position: absolute;
+	top: 70%;
+	left: 48%;
+}
+
+#yellow_heart {
+	position: absolute;
+	top:45%;
+	left:16%;
+}
+
+#red_star {
+	position: absolute;
+	left: 47%;
+    top: 10%;
+}
+
+i {
+	color: white;
+}

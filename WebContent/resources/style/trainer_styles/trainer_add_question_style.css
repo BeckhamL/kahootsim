@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+ font-family: 'Rubik';
+  font-weight: normal;
+}
+div.test {
+  width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.card {
+  border: 1px solid #F0F0F0;
+  border-radius: 1px;
+  background-color: white;
+  box-shadow: 0 1px 4px #F4F4F4;
+}
+.question {
+  border: 1px solid #F0F0F0;
+  border-radius: 1px;
+  background-color: white;
+  box-shadow: 0 1px 4px #F4F4F4;
+  margin: 12px 0;
+  padding: 0;
+  cursor: pointer;
+}
+.question > .title {
+  padding: 10px;
+  border-bottom: 1px solid #F0F0F0;
+}
+ol.answer-list {
+  list-style-type: upper-alpha;
+  margin: 0;
+}
+.answer {
+  padding: 10px 10px 10px 2px;
+  border: 1px solid #FFFFFF;
+}
+.answer .controls {
+  opacity: 0.02;
+}
+.answer:hover {
+  background-color: #FBFBFB;
+}
+.answer:hover .controls {
+  opacity: 1;
+}
+.controls {
+  float: right;
+}
+.controls a .glyphicon {
+  margin: 0 5px;
+  color: #000;
+}
+.controls a .glyphicon:hover {
+  color: #428bca;
+}
+div.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+div.overlay div.screen {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-color: #888;
+  opacity: 0.5;
+}
+div.overlay .dialog {
+  position: relative;
+  display: none;
+  margin: 120px auto 0 auto;
+  background-color: white;
+  font-size: 16px;
+}
+div.overlay .dialog.small {
+  width: 280px;
+}
+div.overlay .dialog.medium {
+  width: 480px;
+}
+div.overlay .dialog.large {
+  width: 768px;
+}
+div.overlay .dialog .dialog-body {
+  position: relative;
+  padding: 24px;
+}
+div.overlay .dialog .dialog-body h4 {
+  margin: 0 0 10px 0;
+}
+div.overlay .dialog .dialog-body .column {
+  display: inline-block;
+  width: 360px;
+  margin: 0 -1px;
+}
+div.overlay .dialog .dialog-body .column:first-of-type {
+  padding-right: 12px;
+}
+div.overlay .dialog .dialog-body .column:last-of-type {
+  padding-left: 12px;
+}
+
+div.overlay .dialog .dialog-body .row {
+  display: inline-block;
+  width: 720px;
+  margin: 0 -1px;
+}
+div.overlay .dialog .dialog-body .row:first-of-type {
+  padding-right: 12px;
+}
+div.overlay .dialog .dialog-body .row:last-of-type {
+  padding-left: 12px;
+}
+
+
+div.overlay .dialog .dialog-body label {
+  font-size: 14px;
+  font-weight: 200;
+  color: #AAA;
+}
+div.overlay .dialog .dialog-body input,
+div.overlay .dialog .dialog-body select {
+  width: 100%;
+  border: 0;
+  font-size: 18px;
+  border-radius: none;
+  padding: 2px 0;
+  margin: 5px 0 25px 0;
+  background-color: white;
+  border-bottom: 1px solid #E0E0E0;
+}
+div.overlay .dialog .dialog-body input option,
+div.overlay .dialog .dialog-body select option {
+  padding: 2px 0;
+  border: 0;
+  background-color: white;
+}
+div.overlay .dialog .dialog-body input:hover,
+div.overlay .dialog .dialog-body select:hover,
+div.overlay .dialog .dialog-body input:active,
+div.overlay .dialog .dialog-body select:active {
+  margin-bottom: 24px;
+  border-bottom: 2px solid #EBEBEB;
+}
+div.overlay .dialog .dialog-body input:focus,
+div.overlay .dialog .dialog-body select:focus {
+  outline: none;
+  margin-bottom: 24px;
+  border-bottom: 2px solid steelblue;
+  transition: border-color 2s;
+}
+div.overlay .dialog .dialog-controls {
+  padding: 0 16px 16px 16px;
+  text-align: right;
+}
+div.overlay .dialog .dialog-controls a {
+  display: inline-block;
+  padding: 0 16px;
+  height: 36px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+div.overlay .dialog .dialog-controls a.dismiss {
+  color: black;
+}
+div.overlay .dialog .dialog-controls a.danger {
+  color: red;
+}
+div.overlay .dialog .dialog-controls a.save {
+  color: steelblue;
+}
+
+#new_button {
+	background: #28a745;
+	color: white;
+	border: none;
+	font-size: 20px;
+}
+
+#configure_button {
+		color: white;
+	border: none;
+	font-size: 20px;
+}
+
+#glyph {
+	color: white;
+}

@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.trainee_not_placed_bg {
+	background-color: #b378d1;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+#correct_text {
+	color: white;
+	position: relative;
+	top: 160px;
+}
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 9%;
+	background-color: white;
+	text-align: left;
+}
+
+#name {
+	float: left;
+	padding-left: 5%;
+	padding-top: 1%;
+	font-size: 25px;
+}
+
+#total_score {
+	float: right;
+	padding-right: 5%;
+	padding-top: 1%;
+	font-size: 25px;
+}
+
+.title {
+	font-size: 66px;
+}
+
+.body_text {
+	font-size: 55px;
+}
+
+@media only screen and (max-height:550px) {
+	#correct_text {
+		color: white;
+		position: relative;
+		top: 20px;
+	}
+	.title {
+		font-size: 50px;
+	}
+	.body_text {
+		font-size: 45px;
+	}
+}
+
+@media only screen and (max-height:350px) {
+	#correct_text {
+		color: white;
+		position: relative;
+		top: 10px;
+	}
+	.title {
+		font-size: 30px;
+	}
+	.body_text {
+		font-size: 25px;
+	}
+	#name {
+		font-size: 15px;
+	}
+	#total_score {
+		font-size: 15px;
+	}
+}

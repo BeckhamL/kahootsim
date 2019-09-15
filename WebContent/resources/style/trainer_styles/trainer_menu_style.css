@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Rubik';
+  background: #f3f3f3;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#align_buttons {
+	position: absolute;
+    top: 20%;
+    float: left;
+    left: 3%;
+}
+
+.header {
+	text-align: center;
+    background: white;
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+	text-align: left;
+}
+
+.list-group{
+	max-height: 300px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    position: absolute;
+    width: 94%;
+    top: 50%;
+    left: 3%;
+	padding: 15px 20px 20px 20px;
+    border-radius: 15px;
+    background: #F2F2FB;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+#list_items {
+	margin-top: 10px;
+}
+
+#select_menus {
+	position: absolute;
+    top: 30%;
+    float: left;
+    left: 3%;
+}
+
+.option_forms {
+	display: inline-block;
+}
